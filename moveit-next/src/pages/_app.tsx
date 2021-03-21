@@ -1,14 +1,7 @@
 import '../styles/global.css';
 
-import { ChallangesProvider } from '../contexts/ChallangesContext';
-import { CountdownProvider } from '../contexts/CountdownContext';
-
 function MyApp({ Component, pageProps }) {
-  return (
-    <ChallangesProvider>
-      <Component {...pageProps} />
-    </ChallangesProvider>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;
